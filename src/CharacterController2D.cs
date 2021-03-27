@@ -35,8 +35,7 @@ public class CharacterController2D : MonoBehaviour
         if (grounded)
         {
             velocity.y = 0;
-
-            // Hier hab ich nichts geändert Paul, nur die "grounded" Bedingung hinzugefügt
+            
             if (Input.GetButtonDown("Jump"))
             {
                 velocity.y = Mathf.Sqrt(2 * jumpHeight * Mathf.Abs(Physics2D.gravity.y));
